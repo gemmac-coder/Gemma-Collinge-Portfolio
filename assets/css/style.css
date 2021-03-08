@@ -1,3 +1,4 @@
+
 html {
     font-size: 10px;
 }
@@ -25,10 +26,41 @@ html {
     margin-bottom: 1rem;
 }
 
-.aboutme {
+.about-me {
     background-color: green;
     padding: 1rem;
     margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.about-me-h2 {
+    background-color: darkcyan;
+    text-align: center;
+}
+
+.about-me-main-container {
+    display: flex;
+    background-color: coral;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.about-me-description {
+    text-align: center;
+    background-color: darkseagreen;
+    padding: 2rem;
+    object-fit: contain;
+    font-family: ;
+     
+
+}
+
+.about-me-image {
+    height: 25%;
+    max-width: 25%;
+    object-fit: contain;
 }
 
 .projects {
@@ -54,7 +86,6 @@ html {
 .card-image-container {
     height: 20rem;
     width: 20rem;
-    margin-bottom: 1rem;
     background-color: yellow;
 }
 
@@ -62,6 +93,7 @@ html {
     height: 100%;
     max-width: 100%;
     object-fit: contain;
+    justify-content: center;
 }
 
 .card-title {
