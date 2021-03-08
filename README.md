@@ -5,4 +5,4 @@
 ##Screenshots
 
 ##Link to deployed application:
-https://github.com/gemmac-coder/My_Portfolio.git
+https://gemmac-coder.github.io/My_Portfolio/

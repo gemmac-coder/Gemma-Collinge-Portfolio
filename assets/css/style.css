@@ -37,9 +37,41 @@ html {
     margin-bottom: 1rem;
 }
 
+.cards-container {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .card {
-    height: 100px;
     background-color: orange;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.card-image-container {
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    background-color: yellow;
+}
+
+.card-image {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.card-title {
+    background-color: blue;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.card-info {
+
 }
 
 /*Tablet*/
