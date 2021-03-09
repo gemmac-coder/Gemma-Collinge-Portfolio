@@ -1,147 +1,181 @@
-
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-        margin: 0px;
-        padding: 0px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.container { 
-    background-color: aqua;
-    height: 100vh;
+#about-me-link-container {
+  display: flex;
+  margin: 10px;
+  background-color: teal;
+}
+
+#about-me-link {
+  padding: 0.1rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: monospace;
+  padding: 20px;
+  font-size 2rem;
+}
+
+#projects-link {
+  padding: 0.1rem;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+#projects-link-container {
     display: flex;
+    margin: 10px;
+    background-color: blueviolet;
 }
 
-.navbar { 
-    background-color: red;
-    padding: 2rem;
+.navbar {
+  background-color: red;
+  padding: 2rem;
+  flex-direction: column;
 }
 
 .content {
-    background-color: yellow;
-    padding: 1rem;
-    flex-grow: 1;
+  background-color: yellow;
+  padding: 1rem;
+  flex-grow: 1;
 }
 
 .header {
-    background-color: pink;
-    padding: 1rem;
-    margin-bottom: 1rem;
+  background-color: pink;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about-me {
-    background-color: green;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
+  background-color: green;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
 }
 
 .about-me-h2 {
-    background-color: darkcyan;
-    text-align: center;
+  background-color: darkcyan;
+  text-align: center;
 }
 
 .about-me-main-container {
-    display: flex;
-    background-color: coral;
-    flex-wrap: wrap;
-    object-fit: contain;
-    padding: 1rem;
-    margin: 1rem;
-
+  display: flex;
+  background-color: coral;
+  flex-wrap: wrap;
+  object-fit: contain;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .about-me-description {
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: darkseagreen;
-    padding: 2rem;
-    object-fit: contain;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;
-     
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: darkseagreen;
+  padding: 2rem;
+  object-fit: contain;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 2.2rem;
 }
 
 .about-me-image-container {
-    display: flex;
-    padding: 2rem;
-    background-color: white;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+  display: flex;
+  padding: 2rem;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .about-me-image {
-    flex-wrap: wrap;
-    height: 30%;
-    max-width: 30%;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 5px;
+  flex-wrap: wrap;
+  height: 30%;
+  max-width: 30%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
 }
 
 .projects {
-    background-color: brown;
-    padding: 1rem;
-    margin-bottom: 1rem;
+  background-color: brown;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cards-container {
-    display: flex;
-    background-color: white;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .card {
-    background-color: orange;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
+  background-color: orange;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 .card-image-container {
-    height: 20rem;
-    width: 20rem;
-    background-color: yellow;
+  height: 20rem;
+  width: 20rem;
+  background-color: yellow;
 }
 
 .card-image {
-    height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    justify-content: center;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  justify-content: center;
 }
 
 .card-title {
-    background-color: blue;
-    margin-bottom: 1rem;
-    padding: 1rem;
+  background-color: blue;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .card-info {
-
 }
 
 /*Tablet*/
 @media screen and (max-width: 768px) {
-    .container { 
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 }
 
 /*Mobile*/
-@media screen and (max-width: 450px) {
-    .container { 
-        flex-direction: column;
-    }
+@media screen and (max-width: 320px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/*Iphone 5/SE decreasing about me paragraph text*/
+@media screen and (max-width: 320px) {
+  .about-me p {
+    font-size: 0.75rem;
+  }
+}
+
+/*Iphone 6/7/8 Plus decreasing about me paragraph text*/
+@media screen and (max-width: 414px) {
+  .about-me p {
+    font-size: 0.9rem;
+  }
 }
