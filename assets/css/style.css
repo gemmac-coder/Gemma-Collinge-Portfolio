@@ -1,54 +1,45 @@
 html {
   font-size: 10px;
 }
-
 body {
   margin: 0px;
   padding: 0px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
 * {
   box-sizing: border-box;
   text-decoration: none;
 }
-
 #about-me-link-container {
   margin: 10px;
   background-color: teal;
-  display: block; 
+  display: block;
 }
-
 #about-me-link-container ::before {
-    padding-right: 0.2rem;
-    content: "#";
+  padding-right: 0.2rem;
+  content: "#";
 }
-
 #about-me-link-container ::after {
-    padding-left: 0.2rem;
-    content: "{";
+  padding-left: 0.2rem;
+  content: "{";
 }
-
 #about-me-link {
   padding-right: 0.1rem;
   text-decoration: none;
   text-align: right;
   font-family: monospace;
   padding: 20px;
-  font-size 2rem;
+  font-size: 2rem;
 }
-
 #projects-link-container ::before {
-    padding-right: 0.2rem;
-    content: "#";
+  padding-right: 0.2rem;
+  content: "#";
 }
-
 #projects-link-container ::after {
-    padding-left: 0.2rem;
-    content: "{";
+  padding-left: 0.2rem;
+  content: "{";
 }
-
 #projects-link {
   padding: 0.1rem;
   text-decoration: none;
@@ -58,27 +49,22 @@ body {
   font-family: monospace;
   font-size: 2rem;
 }
-
 #projects-link-container {
-    margin: 10px;
-    background-color: blueviolet;
-    display: block;
+  margin: 10px;
+  background-color: blueviolet;
+  display: block;
 }
-
 a:link {
-    color: #FF0000;
-    font-size: 15px;
-  }
-
-  a:visited {
-    color: #00FF00;
-  }
-
-  a:hover {
-    color: #FF00FF;
-    font-size: 20px;
-  }
-
+  color: #ff0000;
+  font-size: 15px;
+}
+a:visited {
+  color: #00ff00;
+}
+a:hover {
+  color: #ff00ff;
+  font-size: 20px;
+}
 .navbar {
   background-color: red;
   width: 100%;
@@ -87,37 +73,31 @@ a:link {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .content {
   background-color: yellow;
   padding: 1rem;
   flex-grow: 1;
 }
-
 .header {
   background-color: pink;
   padding: 1rem;
   margin-bottom: 1rem;
 }
-
 .about-me {
   background-color: green;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 5px;
 }
-
 .about-h2 {
   background-color: darkcyan;
   text-align: center;
   font-size: 2.5rem;
 }
-
 .about-h2:hover {
-    text-align: center;
-    font-size: 2.6rem;
+  text-align: center;
+  font-size: 2.6rem;
 }
-
 .about-me-main-container {
   display: flex;
   background-color: coral;
@@ -126,7 +106,6 @@ a:link {
   padding: 1rem;
   margin: 1rem;
 }
-
 .about-me-description {
   text-align: left;
   display: flex;
@@ -139,7 +118,6 @@ a:link {
   font-weight: bold;
   font-size: 2rem;
 }
-
 .about-me-image-container {
   display: flex;
   padding: 2rem;
@@ -147,7 +125,6 @@ a:link {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .about-me-image {
   flex-wrap: wrap;
   height: 30%;
@@ -157,52 +134,43 @@ a:link {
   border-radius: 100%;
   opacity: 1;
 }
-
 .about-me-image:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
-
-.about-me-my-attributes ul li{
+.about-me-my-attributes ul li {
   display: flex;
   justify-items: center;
   background-color: gold;
   font-size: 1.2rem;
   list-style: none;
 }
-
 .about-me-my-attributes .skillsbar {
-    background-color: rgb(227, 227, 227);
-    border-radius: 13px;
-    padding: 1.5px;
-    margin: 2px;
+  background-color: rgb(227, 227, 227);
+  border-radius: 13px;
+  padding: 1.5px;
+  margin: 2px;
 }
-
 .projects {
   background-color: brown;
   padding: 1rem;
   margin-bottom: 1rem;
 }
-
 .projects-h2 {
   text-align: center;
   font-size: 2.5rem;
 }
-
 .projects-h2:hover {
-    text-align: center;
-    font-size: 2.6rem;
+  text-align: center;
+  font-size: 2.6rem;
 }
-
 .card-image-container:first-child {
   display: flex;
   flex-grow: 1;
 }
-
-.card-image:first-child{
+.card-image:first-child {
   display: flex;
   flex-grow: 1;
 }
-
 .cards-container {
   display: flex;
   background-color: white;
@@ -210,22 +178,21 @@ a:link {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .card {
   background-color: orange;
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 5px;
+  width: 25vw;
 }
-
+.card:first-child {
+  width: 80vw;
+}
 .card-image-container {
-  height: 20rem;
-  width: 20rem;
   padding: 1rem;
   margin: 1rem;
   justify-content: center;
 }
-
 .card-image {
   height: 95%;
   width: 95%;
@@ -234,65 +201,58 @@ a:link {
   padding: 0.5rem;
   opacity: 1;
 }
-
-.card-image:hover{
-    opacity: 0.85;
-
+.card-image:hover {
+  opacity: 0.85;
 }
-
 .card-title {
   background-color: blue;
   margin-bottom: 1rem;
   padding: 1rem;
 }
-
 .card-info {
 }
- 
 /*Iphone 5/SE*/
 @media screen and (max-width: 320px) {
-    .about-me-h2{
-      font-size: 0.75rem;
-    }
-    .projects-h2{
-      font-size: 0.75rem;
-    }
+  .about-me-h2 {
+    font-size: 0.75rem;
+  }
+  .projects-h2 {
+    font-size: 0.75rem;
+  }
   .about-me p {
     font-size: 0.55rem;
   }
-
+  .card {
+    width: 100%;
   }
-  
-  /*IPhone 6/7/8*/
-  @media screen and (max-width: 414px) {
-    .about-me-h2 {
-      font-size: 0.8rem;
-    }
-    .projects-h2 {
-      font-size: 0.8rem;
-    }
-    .about-me p {
-      font-size: 0.6rem;
-    } 
+}
+/*IPhone 6/7/8*/
+@media screen and (max-width: 414px) {
+  .about-me-h2 {
+    font-size: 0.8rem;
   }
-
-   /*IPhone 6/7/8 Plus decreasing about me paragraph text*/
-   @media screen and (max-width: 992px) {
-    .about-me-h2 {
-      font-size: 1.9rem;
-    }
-    .projects-h2 {
-      font-size: 1.9rem;
-    }
-    .about-me p {
-      font-size: 1.3rem;
-    } 
-    .about-me-my-attributes ul li {
-      font-size: 1.1rem;
+  .projects-h2 {
+    font-size: 0.8rem;
   }
-  
-
-
-
-
-
+  .about-me p {
+    font-size: 0.6rem;
+  }
+  .card {
+    width: 100%;
+  }
+}
+/*IPhone 6/7/8 Plus decreasing about me paragraph text*/
+@media screen and (max-width: 992px) {
+  .about-me-h2 {
+    font-size: 1.9rem;
+  }
+  .projects-h2 {
+    font-size: 1.9rem;
+  }
+  .about-me p {
+    font-size: 1.3rem;
+  }
+  .about-me-my-attributes ul li {
+    font-size: 1.1rem;
+  }
+}
