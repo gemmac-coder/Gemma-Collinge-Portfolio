@@ -211,7 +211,7 @@ a:link {
   }
 }
 
-/*Iphone 6/7/8 Plus decreasing about me paragraph text*/
+/*IPhone 6/7/8 Plus decreasing about me paragraph text*/
 @media screen and (max-width: 414px) {
   .about-me p {
     font-size: 0.9rem;
