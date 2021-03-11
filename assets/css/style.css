@@ -397,10 +397,11 @@ a:hover {
     width: 80vw;
   }
 
-.card-image {
+/* .card-image {
   max-height: 80px;
+  
   max-width: 80px;
-}
+} */
 
 .card-image:first-child {
   max-height: 200px;
