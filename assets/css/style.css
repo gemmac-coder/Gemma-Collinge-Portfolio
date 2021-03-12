@@ -3,14 +3,21 @@ html {
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   padding: 0px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
   text-decoration: none;
+}
+.container {
+  background-color: #1c2541;
+}
+.navbar {
+  background-color: #1c2541;
 }
 
 #about-me-link-container {
@@ -83,20 +90,47 @@ a:hover {
 .header {
   background-color: #1c2541;
   padding: 1rem;
-  margin-bottom: 1.0rem;
+  margin-bottom: 0rem;
+  
 }
 
 .header-g {
   font-size: 2.6rem;
-  color:#00cecb ;
-  box-shadow: #5bc0be;
+  color: #00cecb;
+  margin-bottom: 0rem;
+  
 }
+
+.header-g h1{
+  background-color: #1c2541;
+  color: inherit;
+  margin: 0rem;
+  padding-top: 1.2rem;
+  text-align: center;
+}
+
+#codepen {
+  display: inline;
+  position: relative;
+  margin-left: 47vw;
+  background-color: #1c2541 ;
+  padding-bottom: 0.5rem;
+}
+
+#codepen i{
+  position: absolute;
+  top: 50%;
+  margin-left: 47%;
+  padding-bottom: 1rem;
+  transform: translate (50vw, 50%);
+}
+
 
 .about-me {
   background-color: #1c2541;
   padding: 0.2rem;
-  margin-bottom: 0.2rem;
-  border-radius: 5px;
+  margin-bottom: 0rem;
+  border-radius: 0px;
 }
 .about-h2{
   color: #5bc0be;
@@ -163,7 +197,7 @@ a:hover {
 .about-me-my-attributes ul li {
   display: flex;
   justify-items: center;
-  color: #5bc0be;
+  color: #1b9aaa;
   background-color: #1c2541;
   font-size: 1.4rem;
   list-style: none;
@@ -185,11 +219,11 @@ progress::-webkit-progress-value {
 }
 
 progress::-moz-progress-bar {
-  background: lightcolor;
+  background: whitesmoke;
 }
 
 .projects {
-  background-color: #3a506b;
+  background-color: #1c2541;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -206,7 +240,7 @@ progress::-moz-progress-bar {
 
 .cards-container {
   display: flex;
-  background-color: #3a506b;
+  background-color: #1c2541;
   padding: 1rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -284,7 +318,7 @@ progress::-moz-progress-bar {
 
 
 /*XL Breakpoint*/
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) and (min-width: 1201px) {
   .about-me-h2 {
     font-size: 6rem;
   }
@@ -310,7 +344,7 @@ progress::-moz-progress-bar {
 }
 
 /*Large Breakpoint*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width:  993px) {
   .about-h2 {
     font-size: 4.9rem;
   }
@@ -318,10 +352,10 @@ progress::-moz-progress-bar {
     font-size: 4.9rem;
   }
   .about-me-description p {
-    font-size: 4.3rem;
+    font-size: 4.5rem;
   }
   .about-me-my-attributes ul li {
-    font-size: 4.2rem;
+    font-size: 4.5rem;
   }
   .card {
     width: 25vw;
@@ -506,6 +540,7 @@ progress::-moz-progress-bar {
   }
 
   .about-me-my-attributes ul li {
+
     font-size: 1rem;
   }
 
@@ -547,4 +582,7 @@ progress::-moz-progress-bar {
     blink-caret .75s step-end infinite;
     animation-delay: 2s;
     animation-iteration-count:5;
+}
+.footer {
+  background-color: #1c2541;
 }
