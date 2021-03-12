@@ -5,9 +5,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-color: #292F36;
+  font-family: 'Josefin Sans', sans-serif;1;
 }
 
 * {
@@ -100,7 +98,7 @@ a:hover {
   margin-bottom: 0.2rem;
   border-radius: 5px;
 }
-.about-h2 h2{
+.about-h2{
   color: #5bc0be;
   text-align: center;
   font-size: 2.3rem;
@@ -111,7 +109,6 @@ a:hover {
   font-size: 2.6rem;
 }
 
-}
 .about-me-main-container {
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +135,7 @@ a:hover {
 .about-me-image-container {
   display: flex;
   padding: 0.2rem;
-  background-color: white;
+  background-color: #1c2541;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -158,8 +155,7 @@ a:hover {
 
 .about-me-description p {
   text-align: left;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   font-size: 0.5rem;
 }
@@ -167,17 +163,31 @@ a:hover {
 .about-me-my-attributes ul li {
   display: flex;
   justify-items: center;
-  background-color: gold;
+  color: #1b9aaa;
+  background-color: #1c2541;
   font-size: 1.4rem;
   list-style: none;
 }
 
 .about-me-my-attributes .skillsbar {
-  background-color: rgb(227, 227, 227);
+  background-color: grey;
   border-radius: 13px;
   padding: 1.5px;
   margin: 2px;
 }
+
+progress {
+ color: #1b9aaa;
+}
+
+progress::-webkit-progress-value {
+  background: #1b9aaa;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
 .projects {
   background-color: brown;
   padding: 1rem;
