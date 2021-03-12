@@ -5,7 +5,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Josefin Sans', sans-serif;1;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 * {
@@ -163,7 +163,7 @@ a:hover {
 .about-me-my-attributes ul li {
   display: flex;
   justify-items: center;
-  color: #1b9aaa;
+  color: #5bc0be;
   background-color: #1c2541;
   font-size: 1.4rem;
   list-style: none;
@@ -177,11 +177,11 @@ a:hover {
 }
 
 progress {
- color: #1b9aaa;
+ color: #00cecb;
 }
 
 progress::-webkit-progress-value {
-  background: #1b9aaa;
+  background: #00cecb;
 }
 
 progress::-moz-progress-bar {
@@ -189,13 +189,15 @@ progress::-moz-progress-bar {
 }
 
 .projects {
-  background-color: brown;
+  background-color: #3a506b;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 .projects-h2 {
   text-align: center;
+  color: #5bc0be;
   font-size: 2.3rem;
+
 }
 .projects-h2:hover {
   text-align: center;
@@ -204,13 +206,13 @@ progress::-moz-progress-bar {
 
 .cards-container {
   display: flex;
-  background-color: white;
+  background-color: #3a506b;
   padding: 1rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .card {
-  background-color: orange;
+  background-color: #5bc0be;
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 5px;
@@ -252,8 +254,34 @@ progress::-moz-progress-bar {
   background-color: blue;
   z-index: 1;
 }
-.card-info {
+.card1-info p{
+  letter-spacing: .2rem;
+  font-weight: bold;
+  font-size:  2rem;
 }
+
+.card-info p {
+  overflow: hidden; 
+  border-right: .15rem solid #1b9aaa; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .1rem;
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    animation-delay: 2s;
+    animation-iteration-count:5;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:#1b9aaa; }
+}
+
 
 /*XL Breakpoint*/
 @media screen and (min-width: 1400px) {
@@ -283,7 +311,7 @@ progress::-moz-progress-bar {
 
 /*Large Breakpoint*/
 @media screen and (max-width: 1200px) {
-  .about-me-h2 {
+  .about-h2 {
     font-size: 4.9rem;
   }
   .projects-h2 {
@@ -309,7 +337,7 @@ progress::-moz-progress-bar {
 
 /*Large Tablets*/
 @media screen and (max-width: 992px) {
-  .about-me-h2 {
+  .about-h2 {
     font-size: 4rem;
   }
   .projects-h2 {
@@ -335,7 +363,7 @@ progress::-moz-progress-bar {
 
 /*Medium Breakpoint*/
 @media screen and (max-width: 768px) {
-  .about-me-h2 {
+  .about-h2 {
     font-size: 3.4rem;
   }
   .projects-h2 {
@@ -357,12 +385,26 @@ progress::-moz-progress-bar {
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
+  }
+  card-info p {
+    overflow: hidden; 
+    border-right: .15rem solid #1b9aaa; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    padding-left: 1.5rem;
+    letter-spacing: .25rem;
+    font-size: 2rem;
+    animation: 
+      typing 5.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      animation-delay: 2s;
+      animation-iteration-count:5;
   }
 }
 
 /*Small Breakpoint*/
 @media screen and (max-width: 576px) {
-  .about-me-h2 {
+  .about-h2 {
     font-size: 2.6rem;
   }
   .projects-h2 {
@@ -385,6 +427,20 @@ progress::-moz-progress-bar {
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
+  }
+  card-info p {
+    overflow: hidden; 
+    border-right: .15rem solid #1b9aaa; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    padding-left: 0.8rem;
+    letter-spacing: .008rem;
+    font-size: 1rem;
+    animation: 
+      typing 5.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      animation-delay: 2s;
+      animation-iteration-count:5;
   }
 }
 
@@ -417,6 +473,20 @@ progress::-moz-progress-bar {
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
+  }
+  .card-info p {
+    overflow: hidden; 
+    border-right: .15rem solid #1b9aaa; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    padding-left: 0.6rem;
+    letter-spacing: .0065rem;
+    font-size: 0.85rem;
+    animation: 
+      typing 5.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+      animation-delay: 2s;
+      animation-iteration-count:5;
   }
 }
 
@@ -462,4 +532,19 @@ progress::-moz-progress-bar {
 .card-image:first-child {
   max-height: 200px;
   max-width: 200px;
+}
+
+.card-info p {
+  overflow: hidden; 
+  border-right: .15rem solid #1b9aaa; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  padding-left: 0.45rem;
+  letter-spacing: .005rem;
+  font-size: 0.8rem;
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    animation-delay: 2s;
+    animation-iteration-count:5;
 }
