@@ -14,15 +14,15 @@ body {
   text-decoration: none;
 }
 .container {
-  background-color: #1c2541;
+  background-color: #3a506b;
 }
 .navbar {
-  background-color: #1c2541;
+  background-color: #3a506b;
 }
 
 #about-me-link-container {
   margin: 10px;
-  background-color: #1c2541;
+  background-color: #3a506b;
   display: block;
 }
 #about-me-link-container ::before {
@@ -60,7 +60,7 @@ body {
 }
 #projects-link-container {
   margin: 10px;
-  background-color: #1c2541;
+  background-color: #3a506b;
   display: block;
 }
 a:link {
@@ -75,7 +75,7 @@ a:hover {
   font-size: 20px;
 }
 .navbar {
-  background-color: #1c2541;
+  background-color: #3a506b;
   width: 100%;
   padding: 1rem;
   display: flex;
