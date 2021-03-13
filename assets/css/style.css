@@ -95,13 +95,13 @@ a:hover {
   flex-grow: 1;
 }
 
-.header-g {
+.header {
   font-size: 2.6rem;
   color: #00cecb;
   margin-bottom: 0rem;
 }
 
-.header-g h1 {
+.header h1 {
   background-color: #1c2541;
   color: inherit;
   margin: 0rem;
@@ -506,13 +506,6 @@ progress::-moz-progress-bar {
 
 /*Small Breakpoint*/
 @media screen and (max-width: 576px) {
-  #codepen i {
-    position: absolute;
-    top: 50%;
-    margin-left: 50%;
-    padding-bottom: 1rem;
-    transform: translate (50vw, 50%);
-  }
   .about-h2 {
     font-size: 2.6rem;
   }
@@ -555,37 +548,67 @@ progress::-moz-progress-bar {
 
 /*IPhone 6/7/8*/
 @media screen and (max-width: 414px) {
-  #codepen i {
-    position: absolute;
-    top: 50%;
-    margin-left: 50%;
+  .about-me-link {
+    font-size: 2rem;
+  }
+
+  .projects-link {
+    font-size: 2rem;
+  }
+  .linkedin-icon {
+    max-height: 80px;
+    max-width: 80px;
+  }
+  .header h1 {
+    padding-top: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     padding-bottom: 1rem;
-    transform: translate (50vw, 50%);
+    margin: 0rem;
+    font-size: 3.25rem;
+    text-align: center;
   }
   .about-h2 {
-    font-size: 2rem;
-  }
-  .projects-h2 {
-    font-size: 2rem;
-  }
-  .about-me-description p {
-    font-size: 1.75rem;
-    padding-left: 0.5rem;
+    font-size: 2.2rem;
     padding-bottom: 0.5rem;
   }
-
-  .about-me-my-attributes ul li {
-    font-size: 1.75rem;
+  .about-me-image {
+    max-height: 100px;
+    max-width: 100px;
+    padding-bottom: 1rem;
   }
-
+  .about-me-description p {
+    font-size: 2rem;
+    padding-left: 0.2rem;
+    padding-bottom: 0.5rem;
+  }
+  .about-me-my-attributes {
+    padding-left: 0.15rem;
+    padding-bottom: 1rem;
+    padding-right: 0.25rem;
+  }
+  .about-me-my-attributes p {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+  }
+  .about-me-my-attributes ul li {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .projects-h2 {
+    font-size: 2.2rem;
+  }
+  .card:first-child {
+    width: 80vw;
+  }
   .card {
     width: 60vw;
     padding: 0rem;
     margin: 0.5rem;
   }
 
-  .card:first-child {
-    width: 80vw;
+  .centered-first-card h3 {
+    font-size: 3rem;
   }
 
   .card-image-container {
@@ -597,9 +620,11 @@ progress::-moz-progress-bar {
     border-right: 0.15rem solid #1b9aaa;
     white-space: nowrap;
     margin: 0 auto;
+    padding-top: 1rem;
     padding-left: 1.5rem;
+    padding-bottom: 1rem;
     letter-spacing: 0.0065rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2.5s;
     animation-iteration-count: 6;
@@ -608,22 +633,37 @@ progress::-moz-progress-bar {
 
 /*Iphone 5/SE*/
 @media screen and (max-width: 320px) {
-  .about-h2 {
-    font-size: 2rem;
-  }
-  .header-g h1 {
-    padding-top: 3rem;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    margin: 0rem;
-    font-size: 3rem;
-  }
-  .projects-h2 {
-    font-size: 2rem;
+  .about-me-link {
+    font-size: 1.5rem;
   }
 
+  .projects-link {
+    font-size: 1.5rem;
+  }
+  .linkedin-icon {
+    max-height: 50px;
+    max-width: 50px;
+  }
+  .header h1 {
+    padding-top: 3rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    padding-bottom: 1rem;
+    margin: 0rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .about-h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about-me-image {
+    max-height: 100px;
+    max-width: 100px;
+  }
   .about-me-description p {
     font-size: 1.5rem;
+    padding-top: 0.5rem;
     padding-left: 0.25rem;
     padding-bottom: 1.5rem;
     text-align: center;
@@ -640,14 +680,15 @@ progress::-moz-progress-bar {
   .about-me-my-attributes ul li {
     font-size: 1.3rem;
   }
-
+  .projects-h2 {
+    font-size: 2rem;
+  }
   .card {
     width: 60vw;
     padding: 0rem;
     margin: 0.5rem;
     flex-direction: column;
   }
-
   .card:first-child {
     width: 80vw;
     padding: 0.5rem;
@@ -659,7 +700,9 @@ progress::-moz-progress-bar {
     max-height: 250px;
     max-width: 250px;
   }
-
+  .centered h3 {
+    font-size: 2.5rem;
+  }
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
@@ -670,14 +713,15 @@ progress::-moz-progress-bar {
 
     max-width: 90px;
   }
-  */ .card-info p {
+  .card-info p {
     overflow: hidden;
     border-right: 0.15rem solid #1b9aaa;
     white-space: nowrap;
     margin: 0 auto;
     padding-left: 1rem;
+    padding-bottom: 1rem;
     letter-spacing: 0.05rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2.5s;
     animation-iteration-count: 6;
