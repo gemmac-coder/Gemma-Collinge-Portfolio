@@ -682,13 +682,12 @@ progress::-moz-progress-bar {
     padding: 0rem;
   }
 
-  /* .card-image {
-  max-height: 90px;
-  
-  max-width: 90px;
-} */
+  .card-image {
+    max-height: 90px;
 
-  .card-info p {
+    max-width: 90px;
+  }
+  */ .card-info p {
     overflow: hidden;
     border-right: 0.15rem solid #1b9aaa;
     white-space: nowrap;
