@@ -458,25 +458,58 @@ progress::-moz-progress-bar {
 
 /*Medium Breakpoint*/
 @media screen and (max-width: 768px) {
-  #codepen i {
-    position: absolute;
-    top: 50%;
-    margin-left: 50%;
-    padding-bottom: 1rem;
-    transform: translate (50vw, 50%);
+  #about-me-link {
+    font-size: 3.5rem;
+  }
+  #projects-link {
+    font-size: 3.5rem;
+  }
+  .linked-in-icon {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  .header h1 {
+    padding-top: 3rem;
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+    margin: 0rem;
+    font-size: 4.5rem;
+    text-align: center;
   }
   .about-h2 {
-    font-size: 3.4rem;
+    font-size: 4.25rem;
   }
-  .projects-h2 {
-    font-size: 3.4rem;
+  .about-me-image {
+    max-height: 200px;
+    max-width: 200px;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+    display: block;
   }
+
   .about-me-description p {
-    font-size: 2.7rem;
+    font-size: 3rem;
+    padding-left: 0.2rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+  .about-me-my-attributes {
+    padding-left: 0.5rem;
+    padding-bottom: 2.5rem;
+    padding-right: 0.25rem;
+  }
+  .about-me-my-attributes p {
+    font-size: 3rem;
+    padding-right: 0.5rem;
   }
 
   .about-me-my-attributes ul li {
-    font-size: 2.7rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .projects-h2 {
+    font-size: 4.25rem;
   }
   .card {
     width: 50vw;
@@ -490,17 +523,22 @@ progress::-moz-progress-bar {
     margin: 0rem;
     padding: 0rem;
   }
-  card-info p {
+  .centered-first-card h3 {
+    font-size: 3.25rem;
+  }
+  .card-info p {
     overflow: hidden;
     border-right: 0.15rem solid #1b9aaa;
     white-space: nowrap;
     margin: 0 auto;
+    padding-top: 2rem;
     padding-left: 1.5rem;
+    padding-bottom: 2rem;
     letter-spacing: 0.25rem;
-    font-size: 2rem;
+    font-size: 2.75rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2s;
-    animation-iteration-count: 5;
+    animation-delay: 2.5s;
+    animation-iteration-count: 6;
   }
 }
 
@@ -512,7 +550,7 @@ progress::-moz-progress-bar {
   #projects-link {
     font-size: 3rem;
   }
-  .linkedin-icon {
+  .linked-in-icon {
     max-height: 100px;
     max-width: 100px;
   }
@@ -532,25 +570,28 @@ progress::-moz-progress-bar {
     max-height: 140px;
     max-width: 140px;
     padding-top: 0.25rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
   }
   .about-me-description p {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     text-align: center;
   }
   .about-me-my-attributes {
     padding-left: 0.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.75rem;
     padding-right: 0.25rem;
   }
   .about-me-my-attributes p {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     padding-right: 0.5rem;
   }
   .about-me-my-attributes ul li {
-    font-size: 2.25rem;
+    font-size: 2.75rem;
+    padding-bottom: 1rem;
   }
-
+  .projects-h2 {
+    font-size: 3rem;
+  }
   .card {
     width: 60vw;
     padding: 0rem;
@@ -560,7 +601,7 @@ progress::-moz-progress-bar {
     width: 80vw;
   }
   .centered-first-card h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .card-image-container {
     margin: 0rem;
@@ -571,14 +612,14 @@ progress::-moz-progress-bar {
     border-right: 0.15rem solid #1b9aaa;
     white-space: nowrap;
     margin: 0 auto;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     padding-left: 1rem;
     padding-bottom: 1.5rem;
     letter-spacing: 0.008rem;
     font-size: 2.5rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 6;
   }
 }
 
@@ -591,7 +632,7 @@ progress::-moz-progress-bar {
   #projects-link {
     font-size: 2rem;
   }
-  .linkedin-icon {
+  .linked-in-icon {
     max-height: 80px;
     max-width: 80px;
   }
@@ -677,7 +718,7 @@ progress::-moz-progress-bar {
   #projects-link {
     font-size: 1.5rem;
   }
-  .linkedin-icon {
+  .linked-in-icon {
     max-height: 50px;
     max-width: 50px;
   }
