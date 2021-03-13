@@ -89,23 +89,6 @@ a:hover {
   background-color: #0b132b;
 }
 
-#codepen {
-  display: inline;
-  position: relative;
-  margin-left: 48.5%;
-  background-color: #1c2541;
-  padding-bottom: 0.5rem;
-  text-align: center;
-}
-
-#codepen i {
-  position: absolute;
-  top: 50%;
-  margin-left: 48.5%;
-  padding-bottom: 1rem;
-  transform: translate (48.5%, 50%);
-}
-
 .content {
   background-color: #1c2541;
   padding: 1rem;
