@@ -76,14 +76,14 @@ body {
 
 a:link {
   color: #00cecb;
-  font-size: 15px;
+  font-size: 2.5rem;
 }
 a:visited {
   color: #1b9aaa;
 }
 a:hover {
   color: #5bc0be;
-  font-size: 20px;
+  font-size: 2.5rem;
 }
 .container {
   background-color: #0b132b;
@@ -354,22 +354,48 @@ progress::-moz-progress-bar {
 }
 
 /*XL Breakpoint*/
-@media screen and (min-width: 1400px) and (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
+  #about-me-link {
+    font-size: 3rem;
+  }
+  #projects-link {
+    font-size: 3rem;
+  }
+  .linked-in-icon {
+    padding-top: 0rem;
+    max-height: 350px;
+    max-width: 350px;
+  }
+  .header h1 {
+    padding-top: 4.25rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 2.25rem;
+    margin: 0rem;
+    font-size: 5rem;
+    text-align: center;
+  }
   .about-h2 {
     font-size: 4.5rem;
   }
 
   .about-me-description p {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
+  .about-me-my-attributes {
+    padding-left: 0.25rem;
+    padding-bottom: 4rem;
+    padding-right: 0.5rem;
+  }
+
   .about-me-my-attributes ul li {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   .projects-h2 {
     font-size: 4.5rem;
   }
   .card {
-    width: 28vw;
+    width: 30vw;
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex-direction: row;
@@ -377,9 +403,26 @@ progress::-moz-progress-bar {
   .card:first-child {
     width: 75vw;
   }
+  .centered-first-card h3 {
+    font-size: 4rem;
+  }
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
+  }
+  .card-info p {
+    overflow: hidden;
+    border-right: 0.15rem solid #1b9aaa;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 2.2rem;
+    letter-spacing: 0.25rem;
+    font-size: 2.5rem;
+    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation-delay: 2.5s;
+    animation-iteration-count: 6;
   }
 }
 
@@ -414,7 +457,11 @@ progress::-moz-progress-bar {
   }
   .about-me-my-attributes {
     padding-left: 0.5rem;
-    padding-bottom: 3.2rem;
+    padding-bottom: 3.25rem;
+    padding-right: 0.5rem;
+  }
+  .about-me-my-attributes p {
+    font-size: 3.25rem;
     padding-right: 0.5rem;
   }
   .about-me-my-attributes ul li {
@@ -426,7 +473,7 @@ progress::-moz-progress-bar {
   .card {
     width: 25vw;
     padding: 0rem;
-    flex-direction: column;
+    flex-direction: row;
   }
   .card:first-child {
     width: 75vw;
