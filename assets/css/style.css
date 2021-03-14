@@ -1,3 +1,12 @@
+:root {
+  --navy-navbar-colour: #0b132b;
+  --navy-background-colour: #1c2541;
+  --light-teal-accent-colour: #5bc0be;
+  --medium-teal-accent-colour: #00cecb;
+  --dark-teal-accent-colour: #1b9aaa;
+  --grey-skills-bar-background: grey;
+  --white: white;
+}
 html {
   font-size: 10px;
 }
@@ -15,7 +24,7 @@ body {
 }
 
 .navbar {
-  background-color: #0b132b;
+  background-color: var(--navy-navbar-colour);
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -25,7 +34,7 @@ body {
 
 #about-me-link-container {
   margin: 10px;
-  background-color: #0b132b;
+  background-color: var(--navy-navbar-colour);
   display: block;
 }
 
@@ -40,7 +49,7 @@ body {
   text-align: right;
   font-family: monospace;
   padding: 20px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 #about-me-link-container ::after {
@@ -55,7 +64,7 @@ body {
 
 #projects-link-container {
   margin: 10px;
-  background-color: #0b132b;
+  background-color: var(--navy-navbar-colour);
   display: block;
 }
 
@@ -64,7 +73,7 @@ body {
   text-decoration: none;
   width: 48%;
   text-align: center;
-  font-size: 150%;
+  font-size: 3rem;
   font-family: monospace;
   font-size: 2rem;
 }
@@ -75,59 +84,58 @@ body {
 }
 
 a:link {
-  color: #00cecb;
-  font-size: 2.5rem;
+  color: var(--medium-teal-accent-colour);
+  font-size: 3rem;
 }
 a:visited {
-  color: #1b9aaa;
+  color: var(--dark-teal-accent-colour);
 }
 a:hover {
-  color: #5bc0be;
-  font-size: 2.5rem;
+  color: var(--light-teal-accent-colour);
+  font-size: 3.5rem;
 }
 .container {
-  background-color: #0b132b;
+  background-color: var(--navy-navbar-colour);
 }
 
 .content {
-  background-color: #1c2541;
+  background-color: var(--navy-background-colour);
   padding: 1rem;
   flex-grow: 1;
 }
 
 .header {
+  background-color: var(--navy-background-colour);
   font-size: 2.6rem;
-  color: #00cecb;
   margin-bottom: 0rem;
 }
 
 .header h1 {
-  background-color: #1c2541;
-  color: inherit;
+  color: var(--medium-teal-accent-colour);
   margin: 0rem;
   padding-top: 2.5rem;
   text-align: center;
 }
 
 .about-me {
-  background-color: #1b9aaa;
+  background-color: var(--dark-teal-accent-colour);
   padding: 0.5rem;
   margin: 4rem;
   border-radius: 5px;
 }
 .about-h2 {
-  color: #1c2541;
-  background-color: #1b9aaa;
+  color: var(--navy-background-colour);
+  background-color: var(--dark-teal-accent-colour);
   text-align: center;
   font-size: 2.3rem;
 }
 
 .about-h2:hover {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 3rem;
 }
 .about-me-main-container {
-  background-color: #5bc0be;
+  background-color: var(--dark-teal-accent-colour);
   display: flex;
   flex-wrap: wrap;
   object-fit: contain;
@@ -138,15 +146,15 @@ a:hover {
 .about-me-image-container {
   display: flex;
   padding: 0.5rem;
-  background-color: #1b9aaa;
+  background-color: var(--dark-teal-accent-colour);
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .about-me-image {
   flex-wrap: wrap;
-  height: 30%;
-  max-width: 30%;
+  height: 50%;
+  max-width: 50%;
   object-fit: contain;
   object-position: center;
   padding-top: 0.25rem;
@@ -161,7 +169,7 @@ a:hover {
 .about-me-description {
   display: flex;
   flex-wrap: wrap;
-  background-color: #1b9aaa;
+  background-color: var(--dark-teal-accent-colour);
   border-radius: 0.5rem;
   margin: 0rem;
   padding: 0rem;
@@ -169,12 +177,12 @@ a:hover {
 }
 
 .about-me-description p {
-  background-color: #1b9aaa;
+  background-color: var(--dark-teal-accent-colour);
   font-size: 0.4rem;
   padding-top: 0.5rem;
   margin: 0rem;
   padding: 0rem;
-  color: #1c2541;
+  color: var(--navy-background-colour);
 }
 
 .about-me-description p {
@@ -186,7 +194,7 @@ a:hover {
 }
 
 .about-me-my-attributes {
-  background-color: #0b132b;
+  background-color: var(--navy-navbar-colour);
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   margin: 4rem;
@@ -194,8 +202,8 @@ a:hover {
 }
 
 .about-me-my-attributes p {
-  color: #1b9aaa;
-  background-color: #0b132b;
+  color: var(--dark-teal-accent-colour);
+  background-color: var(--navy-navbar-colour);
   padding-left: 3rem;
   padding-top: 1.5rem;
   font-size: 5rem;
@@ -206,58 +214,58 @@ a:hover {
   padding-top: 0.5rem;
   display: flex;
   justify-items: center;
-  color: #1b9aaa;
-  background-color: #0b132b;
+  color: var(--dark-teal-accent-colour);
+  background-color: var(--navy-navbar-colour);
   font-size: 3rem;
   list-style: none;
 }
 
 .about-me-my-attributes .skillsbar {
-  background-color: grey;
+  background-color: var(--grey-skills-bar-background);
   border-radius: 13px;
   margin: 2px;
 }
 
 progress {
-  color: #00cecb;
-  border-color: grey;
-  border: 1px;
-  padding: white;
+  color: var(--medium-teal-accent-colour);
+  border-color: var(--grey-skills-bar-background);
+  border: 1.5px;
+  padding: var(--white);
   padding: 1px;
 }
 
 progress::-webkit-progress-value {
-  background: #00cecb;
+  background: var(--medium-teal-accent-colour);
 }
 
 progress::-moz-progress-bar {
-  background: whitesmoke;
+  background: var(--grey-skills-bar-background);
 }
 
 .projects {
-  background-color: #1c2541;
+  background-color: var(--navy-background-colour);
   padding: 1.5rem;
   margin-bottom: 0rem;
 }
 .projects-h2 {
   text-align: center;
-  color: #5bc0be;
-  font-size: 2.3rem;
+  color: var(--light-teal-accent-colour);
+  font-size: 2.5rem;
 }
 .projects-h2:hover {
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 3rem;
 }
 
 .cards-container {
   display: flex;
-  background-color: #1c2541;
+  background-color: var(--navy-background-colour);
   padding: 1rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .card {
-  background-color: #1b9aaa;
+  background-color: var(--dark-teal-accent-colour);
   margin-bottom: 0.5rem;
   padding: 1rem;
   border-radius: 5px;
@@ -272,7 +280,7 @@ progress::-moz-progress-bar {
   justify-content: center;
   position: relative;
   text-align: center;
-  color: white;
+  color: var(--white);
 }
 .centered-first-card h3 {
   position: absolute;
@@ -281,7 +289,7 @@ progress::-moz-progress-bar {
   transform: translate(-50%, -50%);
   font-size: 5rem;
   font-weight: bolder;
-  color: white;
+  color: var(--white);
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 
@@ -292,7 +300,7 @@ progress::-moz-progress-bar {
   transform: translate(-50%, -50%);
   font-size: 2.5rem;
   font-weight: bolder;
-  color: white;
+  color: var(--white);
   text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
 }
 .card-image-container:first-child {
@@ -326,7 +334,7 @@ progress::-moz-progress-bar {
 
 .card-info p {
   overflow: hidden;
-  border-right: 0.15rem solid #1b9aaa;
+  border-right: 0.15rem solid var(--dark-teal-accent-colour);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.1rem;
@@ -349,7 +357,7 @@ progress::-moz-progress-bar {
     border-color: transparent;
   }
   50% {
-    border-color: #1b9aaa;
+    border-color: var(--dark-teal-accent-colour);
   }
 }
 
@@ -402,6 +410,8 @@ progress::-moz-progress-bar {
   }
   .card:first-child {
     width: 75vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .centered-first-card h3 {
     font-size: 4rem;
@@ -411,18 +421,11 @@ progress::-moz-progress-bar {
     padding: 0rem;
   }
   .card-info p {
-    overflow: hidden;
-    border-right: 0.15rem solid #1b9aaa;
-    white-space: nowrap;
-    margin: 0 auto;
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-bottom: 2.2rem;
     letter-spacing: 0.25rem;
     font-size: 2.5rem;
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2.5s;
-    animation-iteration-count: 6;
   }
 }
 
@@ -486,18 +489,11 @@ progress::-moz-progress-bar {
     padding: 0rem;
   }
   .card-info p {
-    overflow: hidden;
-    border-right: 0.15rem solid #1b9aaa;
-    white-space: nowrap;
-    margin: 0 auto;
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-bottom: 2.2rem;
     letter-spacing: 0.25rem;
     font-size: 2rem;
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2.5s;
-    animation-iteration-count: 6;
   }
 }
 
@@ -568,18 +564,11 @@ progress::-moz-progress-bar {
     padding: 0rem;
   }
   .card-info p {
-    overflow: hidden;
-    border-right: 0.15rem solid #1b9aaa;
-    white-space: nowrap;
-    margin: 0 auto;
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-bottom: 2.2rem;
     letter-spacing: 0.25rem;
     font-size: 1.95rem;
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2.5s;
-    animation-iteration-count: 6;
   }
 }
 
@@ -654,18 +643,11 @@ progress::-moz-progress-bar {
     font-size: 3.25rem;
   }
   .card-info p {
-    overflow: hidden;
-    border-right: 0.15rem solid #1b9aaa;
-    white-space: nowrap;
-    margin: 0 auto;
     padding-top: 2rem;
     padding-left: 1.5rem;
     padding-bottom: 2rem;
     letter-spacing: 0.25rem;
     font-size: 1.85rem;
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2.5s;
-    animation-iteration-count: 6;
   }
 }
 
@@ -735,18 +717,11 @@ progress::-moz-progress-bar {
     padding: 0rem;
   }
   .card-info p {
-    overflow: hidden;
-    border-right: 0.15rem solid #1b9aaa;
-    white-space: nowrap;
-    margin: 0 auto;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     padding-left: 1rem;
     padding-bottom: 1.5rem;
     letter-spacing: 0.008rem;
     font-size: 1.7rem;
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2s;
-    animation-iteration-count: 6;
   }
 }
 
@@ -762,6 +737,7 @@ progress::-moz-progress-bar {
   .linked-in-icon {
     max-height: 80px;
     max-width: 80px;
+    padding-left: 3px;
   }
   .header h1 {
     padding-top: 3rem;
@@ -777,8 +753,8 @@ progress::-moz-progress-bar {
     padding-bottom: 0.5rem;
   }
   .about-me-image {
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 125px;
+    max-width: 125px;
     padding-bottom: 1rem;
   }
   .about-me-description p {
@@ -805,6 +781,7 @@ progress::-moz-progress-bar {
   }
   .card:first-child {
     width: 80vw;
+    padding: 0.75rem;
   }
   .card {
     width: 60vw;
@@ -821,18 +798,11 @@ progress::-moz-progress-bar {
     padding: 0rem;
   }
   .card-info p {
-    overflow: hidden;
-    border-right: 0.15rem solid #1b9aaa;
-    white-space: nowrap;
-    margin: 0 auto;
     padding-top: 1rem;
     padding-left: 1.5rem;
     padding-bottom: 1rem;
     letter-spacing: 0.0065rem;
     font-size: 1.5rem;
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2.5s;
-    animation-iteration-count: 6;
   }
 }
 
@@ -848,6 +818,7 @@ progress::-moz-progress-bar {
   .linked-in-icon {
     max-height: 50px;
     max-width: 50px;
+    padding-left: 3px;
   }
   .header h1 {
     padding-top: 3rem;
@@ -919,17 +890,10 @@ progress::-moz-progress-bar {
     max-width: 90px;
   }
   .card-info p {
-    overflow: hidden;
-    border-right: 0.15rem solid #1b9aaa;
-    white-space: nowrap;
-    margin: 0 auto;
     padding-left: 1rem;
     padding-bottom: 1rem;
     letter-spacing: 0.05rem;
-    font-size: 1rem;
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation-delay: 2.5s;
-    animation-iteration-count: 6;
+    font-size: 1.25rem;
   }
 }
 .footer {
