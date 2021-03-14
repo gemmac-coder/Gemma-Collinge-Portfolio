@@ -1,3 +1,4 @@
+/*Setting theme colours*/
 :root {
   --navy-navbar-colour: #0b132b;
   --navy-background-colour: #1c2541;
@@ -7,6 +8,7 @@
   --grey-skills-bar-background: grey;
   --white: white;
 }
+/*Setting default font size*/
 html {
   font-size: 10px;
 }
@@ -22,7 +24,7 @@ body {
   margin: 0;
   text-decoration: none;
 }
-
+/*This selector styles the navbar*/
 .navbar {
   background-color: var(--navy-navbar-colour);
   width: 100%;
@@ -31,18 +33,18 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+/*This selector styles the about me link container*/
 #about-me-link-container {
   margin: 10px;
   background-color: var(--navy-navbar-colour);
   display: block;
 }
-
+/*This pseudo element adds a # before the about me link container*/
 #about-me-link-container ::before {
   padding-right: 0.2rem;
   content: "#";
 }
-
+/*This selector styles the about me link in the nav bar*/
 #about-me-link {
   padding-right: 0.1rem;
   text-decoration: none;
@@ -51,23 +53,23 @@ body {
   padding: 20px;
   font-size: 3rem;
 }
-
+/*This pseudo element adds a { after the about me link container*/
 #about-me-link-container ::after {
   padding-left: 0.2rem;
   content: "{";
 }
-
+/*This pseudo element adds a # before the projects  link container*/
 #projects-link-container ::before {
   padding-right: 0.2rem;
   content: "#";
 }
-
-#projects-link-container {
+/*This selector styles the project link container*/
+/ #projects-link-container {
   margin: 10px;
   background-color: var(--navy-navbar-colour);
   display: block;
 }
-
+/*This selector styles the projects link in the nav bar*/
 #projects-link {
   padding: 0.1rem;
   text-decoration: none;
@@ -77,52 +79,56 @@ body {
   font-family: monospace;
   font-size: 2rem;
 }
-
+/*This selector contains a pseudo element that adds a { after the project link container*/
 #projects-link-container ::after {
   padding-left: 0.2rem;
   content: "{";
 }
-
+/*Default colour and size styling for the navbar links*/
 a:link {
   color: var(--medium-teal-accent-colour);
   font-size: 3rem;
 }
+/*Colours a visited navbar link*/
 a:visited {
   color: var(--dark-teal-accent-colour);
 }
+/*Styles navbar links, when a user hovers over it*/
 a:hover {
   color: var(--light-teal-accent-colour);
   font-size: 3.5rem;
 }
+/*Styles the navy navbar container*/
 .container {
   background-color: var(--navy-navbar-colour);
 }
-
+/*Styles the main content section*/
 .content {
   background-color: var(--navy-background-colour);
   padding: 1rem;
   flex-grow: 1;
 }
-
+/*This selector styles the header*/
 .header {
   background-color: var(--navy-background-colour);
   font-size: 2.6rem;
   margin-bottom: 0rem;
 }
-
+/*This selectors styles the main title in the header*/
 .header h1 {
   color: var(--medium-teal-accent-colour);
   margin: 0rem;
   padding-top: 2.5rem;
   text-align: center;
 }
-
+/*This selector styles the about me section, which contains an image and short description highlighting my skills*/
 .about-me {
   background-color: var(--dark-teal-accent-colour);
   padding: 0.5rem;
   margin: 4rem;
   border-radius: 5px;
 }
+/*This selector styles the heading in the about me section*/
 .about-h2 {
   color: var(--navy-background-colour);
   background-color: var(--dark-teal-accent-colour);
@@ -130,11 +136,12 @@ a:hover {
   font-size: 2.3rem;
   padding-bottom: 2rem;
 }
-
+/*Contains a pseudo class to increase About Me heading size, when a user hovers over it*/
 .about-h2:hover {
   text-align: center;
   font-size: 4rem;
 }
+/*This selector styles the main container in the about me section*/
 .about-me-main-container {
   background-color: var(--dark-teal-accent-colour);
   display: flex;
@@ -144,6 +151,7 @@ a:hover {
   padding: 0rem;
   margin: 0rem;
 }
+/*This selector styles the image container in the about me section*/
 .about-me-image-container {
   display: flex;
   padding: 0.5rem;
@@ -151,7 +159,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
+/*This selector styles the image in the about me section*/
 .about-me-image {
   flex-wrap: wrap;
   height: 60%;
@@ -163,11 +171,11 @@ a:hover {
   border-radius: 2px;
   opacity: 1;
 }
-
+/*This selector contains a pseudo class to make the about me image more transparent, when a user hovers over it*/
 .about-me-image:hover {
   opacity: 0.8;
 }
-
+/*This selector styles the description container in the about me section*/
 .about-me-description {
   display: flex;
   flex-wrap: wrap;
@@ -177,24 +185,17 @@ a:hover {
   padding: 0rem;
   object-fit: contain;
 }
-
+/*This selector styles the paragraph in the about me section*/
 .about-me-description p {
   background-color: var(--dark-teal-accent-colour);
-  font-size: 0.4rem;
-  padding-top: 0.5rem;
-  margin: 0rem;
-  padding: 0rem;
-  color: var(--navy-background-colour);
-}
-
-.about-me-description p {
-  text-align: left;
+  text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 3rem;
   padding: 0 rem;
+  color: var(--navy-background-colour);
 }
-
+/*This selector styles the my attributes section*/
 .about-me-my-attributes {
   background-color: var(--navy-navbar-colour);
   padding-left: 0.5rem;
@@ -202,7 +203,7 @@ a:hover {
   margin: 4rem;
   border-radius: 5px;
 }
-
+/*This selector styles the paragraph in the my attributes section*/
 .about-me-my-attributes p {
   color: var(--dark-teal-accent-colour);
   background-color: var(--navy-navbar-colour);
@@ -210,7 +211,7 @@ a:hover {
   padding-top: 1.5rem;
   font-size: 5rem;
 }
-
+/*This selector styles the list items in the my attributes section*/
 .about-me-my-attributes ul li {
   padding-left: 0.5rem;
   padding-top: 0.5rem;
@@ -221,7 +222,7 @@ a:hover {
   font-size: 3rem;
   list-style: none;
 }
-
+/*These selectors style the skills bars in the my attributes section*/
 .about-me-my-attributes .skillsbar {
   background-color: var(--grey-skills-bar-background);
   border-radius: 13px;
@@ -243,22 +244,24 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
   background: var(--grey-skills-bar-background);
 }
-
+/*This selector styles the projects section, which contains links to my development work*/
 .projects {
   background-color: var(--navy-background-colour);
   padding: 1.5rem;
   margin-bottom: 0rem;
 }
+/*This selector styles the subheading the projects section*/
 .projects-h2 {
   text-align: center;
   color: var(--light-teal-accent-colour);
   font-size: 2.5rem;
 }
+/*Contains a pseudo class to increase About Me heading size, when a user hovers over it*/
 .projects-h2:hover {
   text-align: center;
   font-size: 4rem;
 }
-
+/*This selector styles the project cards container in the projects section*/
 .cards-container {
   display: flex;
   background-color: var(--navy-background-colour);
@@ -266,6 +269,7 @@ progress::-moz-progress-bar {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+/*This selector styles the project cards*/
 .card {
   background-color: var(--dark-teal-accent-colour);
   margin-bottom: 0.5rem;
@@ -273,9 +277,11 @@ progress::-moz-progress-bar {
   border-radius: 5px;
   width: 60vw;
 }
+/*This selector styles the first project card*/
 .card:first-child {
   width: 80vw;
 }
+/*This selector styles the image container for the project cards*/
 .card-image-container {
   padding: 1rem;
   margin: 1rem;
@@ -284,6 +290,7 @@ progress::-moz-progress-bar {
   text-align: center;
   color: var(--white);
 }
+/*This selector styles the title of the first project card*/
 .centered-first-card h3 {
   position: absolute;
   top: 50%;
@@ -294,7 +301,7 @@ progress::-moz-progress-bar {
   color: var(--white);
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
-
+/*This selector styles the title project cards 2, 3 and 4*/
 .centered h3 {
   position: absolute;
   top: 50%;
@@ -305,11 +312,12 @@ progress::-moz-progress-bar {
   color: var(--white);
   text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
 }
+/*This selector styles the image container of the first project card*/
 .card-image-container:first-child {
   display: flex;
   flex-grow: 1;
 }
-
+/*This selector styles the images of the project cards 2, 3 and 4*/
 .card-image {
   height: 100%;
   width: 100%;
@@ -319,21 +327,16 @@ progress::-moz-progress-bar {
   opacity: 0.5;
   flex-grow: 0.95;
 }
-
+/*This selector styles the image of project card 1*/
 .card-image:first-child {
   display: flex;
   flex-grow: 1;
 }
+/*This selector styles all project card images when a user hovers over them*/
 .card-image:hover {
   opacity: 0.4;
 }
-
-.card1-info p {
-  letter-spacing: 0.2rem;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
+/*This selector adds an animated coming soon message to project cards, 2, 3 and 4*/
 .card-info p {
   overflow: hidden;
   border-right: 0.15rem solid var(--dark-teal-accent-colour);
@@ -344,10 +347,7 @@ progress::-moz-progress-bar {
   animation-delay: 2s;
   animation-iteration-count: 5;
 }
-.footer {
-  background-color: var(--navy-background-colour);
-}
-
+/*This selector styles the key frames for the animated coming soon message on project cards 2, 3, and 4*/
 @keyframes typing {
   from {
     width: 0;
@@ -364,6 +364,10 @@ progress::-moz-progress-bar {
   50% {
     border-color: var(--dark-teal-accent-colour);
   }
+}
+/*This selector styles the footer*/
+.footer {
+  background-color: var(--navy-background-colour);
 }
 
 /*XL Breakpoint*/
@@ -394,6 +398,8 @@ progress::-moz-progress-bar {
 
   .about-me-description p {
     font-size: 3.5rem;
+    text-align: center;
+    padding-left: 5rem;
   }
   .about-me-my-attributes {
     padding-left: 0.25rem;
@@ -548,6 +554,7 @@ progress::-moz-progress-bar {
 
   .about-me-description p {
     font-size: 3.1rem;
+    text-align: center;
   }
   .about-me-my-attributes {
     padding-left: 0.5rem;
