@@ -355,30 +355,27 @@ progress::-moz-progress-bar {
 
 /*XL Breakpoint*/
 @media screen and (min-width: 1400px) and (min-width: 1201px) {
-  #codepen i {
-    position: absolute;
-    top: 50%;
-    margin-left: 50%;
-    padding-bottom: 1rem;
-    transform: translate (50vw, 50%);
-  }
   .about-h2 {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
-  .projects-h2 {
-    font-size: 6rem;
-  }
+
   .about-me-description p {
     font-size: 5rem;
   }
   .about-me-my-attributes ul li {
     font-size: 5rem;
   }
+  .projects-h2 {
+    font-size: 4.5rem;
+  }
   .card {
-    width: 25vw;
+    width: 28vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-direction: row;
   }
   .card:first-child {
-    width: 80vw;
+    width: 75vw;
   }
   .card-image-container {
     margin: 0rem;
@@ -388,36 +385,72 @@ progress::-moz-progress-bar {
 
 /*Large Breakpoint*/
 @media screen and (max-width: 1200px) and (min-width: 993px) {
-  #codepen i {
-    position: absolute;
-    top: 50%;
-    margin-left: 50%;
-    padding-bottom: 1rem;
-    transform: translate (50vw, 50%);
+  #about-me-link {
+    font-size: 3rem;
+  }
+  #projects-link {
+    font-size: 3rem;
+  }
+  .linked-in-icon {
+    padding-top: 0rem;
+    max-height: 250px;
+    max-width: 250px;
+  }
+  .header h1 {
+    padding-top: 4rem;
+    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 2.25rem;
+    margin: 0rem;
+    font-size: 4.5rem;
+    text-align: center;
   }
   .about-h2 {
-    font-size: 4.9rem;
+    font-size: 4.2rem;
   }
-  .projects-h2 {
-    font-size: 4.9rem;
-  }
+
   .about-me-description p {
-    font-size: 4.5rem;
+    font-size: 3.25rem;
+  }
+  .about-me-my-attributes {
+    padding-left: 0.5rem;
+    padding-bottom: 3.2rem;
+    padding-right: 0.5rem;
   }
   .about-me-my-attributes ul li {
-    font-size: 4.5rem;
+    font-size: 3.25rem;
+  }
+  .projects-h2 {
+    font-size: 4.2rem;
   }
   .card {
-    width: 30vw;
-    padding: 0.5rem;
-    flex-direction: row;
+    width: 25vw;
+    padding: 0rem;
+    flex-direction: column;
   }
   .card:first-child {
-    width: 80vw;
+    width: 75vw;
+  }
+  .centered-first-card h3 {
+    font-size: 3.5rem;
   }
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
+  }
+  .card-info p {
+    overflow: hidden;
+    border-right: 0.15rem solid #1b9aaa;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-bottom: 2.2rem;
+    letter-spacing: 0.25rem;
+    font-size: 2rem;
+    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation-delay: 2.5s;
+    animation-iteration-count: 6;
   }
 }
 
@@ -473,7 +506,7 @@ progress::-moz-progress-bar {
     font-size: 3.75rem;
   }
   .card {
-    width: 50vw;
+    width: 30vw;
     padding: 0rem;
     flex-direction: column;
   }
@@ -496,7 +529,7 @@ progress::-moz-progress-bar {
     padding-left: 1.5rem;
     padding-bottom: 2.2rem;
     letter-spacing: 0.25rem;
-    font-size: 2.85rem;
+    font-size: 1.95rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2.5s;
     animation-iteration-count: 6;
@@ -582,7 +615,7 @@ progress::-moz-progress-bar {
     padding-left: 1.5rem;
     padding-bottom: 2rem;
     letter-spacing: 0.25rem;
-    font-size: 2.75rem;
+    font-size: 1.85rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2.5s;
     animation-iteration-count: 6;
@@ -663,7 +696,7 @@ progress::-moz-progress-bar {
     padding-left: 1rem;
     padding-bottom: 1.5rem;
     letter-spacing: 0.008rem;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2s;
     animation-iteration-count: 6;
@@ -749,7 +782,7 @@ progress::-moz-progress-bar {
     padding-left: 1.5rem;
     padding-bottom: 1rem;
     letter-spacing: 0.0065rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2.5s;
     animation-iteration-count: 6;
@@ -846,7 +879,7 @@ progress::-moz-progress-bar {
     padding-left: 1rem;
     padding-bottom: 1rem;
     letter-spacing: 0.05rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
     animation-delay: 2.5s;
     animation-iteration-count: 6;
