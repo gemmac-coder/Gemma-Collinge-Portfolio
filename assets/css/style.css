@@ -128,11 +128,12 @@ a:hover {
   background-color: var(--dark-teal-accent-colour);
   text-align: center;
   font-size: 2.3rem;
+  padding-bottom: 2rem;
 }
 
 .about-h2:hover {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .about-me-main-container {
   background-color: var(--dark-teal-accent-colour);
@@ -153,11 +154,12 @@ a:hover {
 
 .about-me-image {
   flex-wrap: wrap;
-  height: 50%;
-  max-width: 50%;
+  height: 60%;
+  max-width: 60%;
   object-fit: contain;
   object-position: center;
   padding-top: 0.25rem;
+  padding-bottom: 2rem;
   border-radius: 2px;
   opacity: 1;
 }
@@ -254,7 +256,7 @@ progress::-moz-progress-bar {
 }
 .projects-h2:hover {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .cards-container {
@@ -341,6 +343,9 @@ progress::-moz-progress-bar {
   animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
   animation-delay: 2s;
   animation-iteration-count: 5;
+}
+.footer {
+  background-color: var(--navy-background-colour);
 }
 
 @keyframes typing {
@@ -439,11 +444,11 @@ progress::-moz-progress-bar {
   }
   .linked-in-icon {
     padding-top: 0rem;
-    max-height: 250px;
-    max-width: 250px;
+    max-height: 275px;
+    max-width: 275px;
   }
   .header h1 {
-    padding-top: 4rem;
+    padding-top: 4.5rem;
     padding-right: 1rem;
     padding-left: 2rem;
     padding-bottom: 2.25rem;
@@ -453,6 +458,10 @@ progress::-moz-progress-bar {
   }
   .about-h2 {
     font-size: 4.2rem;
+  }
+  .about-h2:hover {
+    font-size: 4.5rem;
+    text-align: center;
   }
 
   .about-me-description p {
@@ -472,6 +481,10 @@ progress::-moz-progress-bar {
   }
   .projects-h2 {
     font-size: 4.2rem;
+  }
+  .projects-h2:hover {
+    font-size: 4.5rem;
+    text-align: center;
   }
   .card {
     width: 25vw;
@@ -521,6 +534,10 @@ progress::-moz-progress-bar {
   .about-h2 {
     font-size: 3.75rem;
   }
+  .about-h2:hover {
+    font-size: 4rem;
+    text-align: center;
+  }
   .about-me-image {
     max-height: 200px;
     max-width: 200px;
@@ -547,6 +564,10 @@ progress::-moz-progress-bar {
   }
   .projects-h2 {
     font-size: 3.75rem;
+  }
+  .projects-h2:hover {
+    font-size: 4rem;
+    text-align: center;
   }
   .card {
     width: 30vw;
@@ -596,6 +617,10 @@ progress::-moz-progress-bar {
   .about-h2 {
     font-size: 3.25rem;
   }
+  .about-h2:hover {
+    font-size: 3.5rem;
+    text-align: center;
+  }
   .about-me-image {
     max-height: 200px;
     max-width: 200px;
@@ -626,6 +651,10 @@ progress::-moz-progress-bar {
   }
   .projects-h2 {
     font-size: 3.25rem;
+  }
+  .projects-h2:hover {
+    font-size: 3.5rem;
+    text-align: center;
   }
   .card {
     width: 50vw;
@@ -675,6 +704,10 @@ progress::-moz-progress-bar {
   .about-h2 {
     font-size: 3rem;
   }
+  .about-h2:hover {
+    font-size: 3.25rem;
+    text-align: center;
+  }
   .about-me-image {
     max-height: 140px;
     max-width: 140px;
@@ -700,6 +733,10 @@ progress::-moz-progress-bar {
   }
   .projects-h2 {
     font-size: 3rem;
+  }
+  .projects-h2:hover {
+    font-size: 3.25rem;
+    text-align: center;
   }
   .card {
     width: 60vw;
@@ -752,6 +789,10 @@ progress::-moz-progress-bar {
     font-size: 2.2rem;
     padding-bottom: 0.5rem;
   }
+  .about-h2:hover {
+    font-size: 2.5rem;
+    text-align: center;
+  }
   .about-me-image {
     max-height: 125px;
     max-width: 125px;
@@ -778,6 +819,10 @@ progress::-moz-progress-bar {
   }
   .projects-h2 {
     font-size: 2.2rem;
+  }
+  .projects-h2:hover {
+    font-size: 2.5rem;
+    text-align: center;
   }
   .card:first-child {
     width: 80vw;
@@ -833,6 +878,10 @@ progress::-moz-progress-bar {
     font-size: 2rem;
     text-align: center;
   }
+  .about-h2:hover {
+    font-size: 2.25rem;
+    text-align: center;
+  }
   .about-me-image {
     max-height: 100px;
     max-width: 100px;
@@ -858,6 +907,10 @@ progress::-moz-progress-bar {
   }
   .projects-h2 {
     font-size: 2rem;
+  }
+  .projects-h2:hover {
+    font-size: 2.25rem;
+    text-align: center;
   }
   .card {
     width: 60vw;
@@ -895,7 +948,4 @@ progress::-moz-progress-bar {
     letter-spacing: 0.05rem;
     font-size: 1.25rem;
   }
-}
-.footer {
-  background-color: #1c2541;
 }
