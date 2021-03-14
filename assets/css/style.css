@@ -377,7 +377,7 @@ progress::-moz-progress-bar {
   background-color: var(--navy-background-colour);
 }
 
-/*All devices over 1200px*/
+/*Devices over 1200px*/
 @media screen and (min-width: 1201px) {
   #about-me-link {
     font-size: 3rem;
