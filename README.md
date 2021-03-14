@@ -1,5 +1,9 @@
 # Gemma Collinge's Portfolio
 
+## Link to deployed application
+
+Click [here](https://gemmac-coder.github.io/My_Portfolio/) to view the project link on Github pages.
+
 ## Description
 
 I was tasked to create a portfolio to attract potential employers by showcasing my development work and allowing potential employers to learn a little more about me and my skills. My portfolio had to provide an image of me, links to my work and a contact link.
@@ -23,5 +27,16 @@ I was tasked to create a portfolio to attract potential employers by showcasing 
 
 ## Screenshots
 
-##Link to deployed application:
-https://gemmac-coder.github.io/My_Portfolio/
+![Screenshot showcasing view at Iphone 5/Se viewport size (max 320px width)](assets/screenshots/screenshot-portfolio-iphone5:se-view.png)
+
+![Screenshot showcasing view at Iphone 6/7/8 Plus viewport size (max 414px width)](assets/screenshots/screenshot-portfolio-iphone-6:7:8:plus-view.png)
+
+![Screenshot showcasing view at Small breakpoint size (max 576px width)](assets/screenshots/screenshot-portfolio-576px-width-view.png)
+
+![Screenshot showcasing view at Medium breakpoint size (max 768px width)](assets/screenshots/screenshot-portfolio-768px-width-view.png)
+
+![Screenshot showcasing view at Large breakpoint size (max 992px width)](assets/screenshots/portfolio-screenshot-992px-width-view.png)
+
+![Screenshot showcasing view at Extra-Large breakpoint size (max 1200px width)](assets/screenshots/screenshot-portfolio-1200px-width-view.png)
+
+![Screenshot showcasing view for devices over 1200px width (max 1200px width)](assets/screenshots/screenshot-portfolio-1200px-width-view.png)
