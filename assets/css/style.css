@@ -372,18 +372,6 @@ progress::-moz-progress-bar {
 .card-image:hover {
   opacity: 0.45;
 }
-/*This selector adds an animated coming soon message to project cards, 2, 3 and 4*/
-.card-info p {
-  overflow: hidden;
-  border-right: 0.15rem solid var(--dark-teal-accent-colour);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.1rem;
-  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  animation-delay: 2s;
-  animation-iteration-count: 5;
-}
-/*This selector styles the key frames for the animated coming soon message on project cards 2, 3, and 4*/
 
 /*This selector styles the footer*/
 .footer {
