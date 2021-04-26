@@ -306,7 +306,7 @@ progress::-moz-progress-bar {
   transform: translate(-50%, -50%);
   font-size: 5rem;
   font-weight: bolder;
-  color: var(--dark-teal-accent-colour);
+  color: var(--navy-navbar-colour);
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 
@@ -321,17 +321,25 @@ progress::-moz-progress-bar {
   display: none;
 }
 
+.card-github-link-container-S {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
 /*This selector styles the title project cards 2, 3 and 4*/
 .centered h3 {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.5rem;
   font-weight: bolder;
-  color: var(--white);
-  text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
+  color: var(--navy-background-colour);
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
+
 /*This selector styles the image container of the first project card*/
 .card-image-container:first-child {
   display: flex;
@@ -341,20 +349,27 @@ progress::-moz-progress-bar {
 .card-image {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   justify-content: center;
   padding: 0.5rem;
-  opacity: 0.9;
+  opacity: 0.6;
   flex-grow: 0.95;
 }
 /*This selector styles the image of project card 1*/
 .card-image:first-child {
   display: flex;
   flex-grow: 1;
+  opacity: 0.7;
+}
+
+.card-image:first-child:hover {
+  display: flex;
+  flex-grow: 1;
+  opacity: 0.5;
 }
 /*This selector styles all project card images when a user hovers over them*/
 .card-image:hover {
-  opacity: 0.4;
+  opacity: 0.45;
 }
 /*This selector adds an animated coming soon message to project cards, 2, 3 and 4*/
 .card-info p {
@@ -451,6 +466,16 @@ progress::-moz-progress-bar {
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
+  }
+
+  .card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    padding-top: 2rem;
+    opacity: 0.9;
+    flex-grow: 0.95;
   }
   .card-info p {
     padding-top: 2rem;
@@ -612,7 +637,7 @@ progress::-moz-progress-bar {
     text-align: center;
   }
   .card {
-    width: 30vw;
+    width: 28vw;
     padding: 0rem;
     flex-direction: column;
   }
@@ -708,6 +733,13 @@ progress::-moz-progress-bar {
   .projects-h2:hover {
     font-size: 3.5rem;
     text-align: center;
+  }
+  .cards-container {
+    display: flex;
+    background-color: var(--navy-background-colour);
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .card {
     width: 50vw;
