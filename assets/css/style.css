@@ -306,7 +306,7 @@ progress::-moz-progress-bar {
   transform: translate(-50%, -50%);
   font-size: 5rem;
   font-weight: bolder;
-  color: var(--dark-teal-accent-colour);
+  color: var(--white);
   text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 
@@ -360,13 +360,13 @@ progress::-moz-progress-bar {
 .card-image:first-child {
   display: flex;
   flex-grow: 1;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .card-image:first-child:hover {
   display: flex;
   flex-grow: 1;
-  opacity: 0.5;
+  opacity: 0.45;
 }
 /*This selector styles all project card images when a user hovers over them*/
 .card-image:hover {
@@ -384,23 +384,7 @@ progress::-moz-progress-bar {
   animation-iteration-count: 5;
 }
 /*This selector styles the key frames for the animated coming soon message on project cards 2, 3, and 4*/
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--dark-teal-accent-colour);
-  }
-}
+
 /*This selector styles the footer*/
 .footer {
   background-color: var(--navy-background-colour);
@@ -946,13 +930,6 @@ progress::-moz-progress-bar {
     margin: 0rem;
     padding: 0rem;
   }
-  .card-info p {
-    padding-top: 1rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
-    letter-spacing: 0.0065rem;
-    font-size: 1.5rem;
-  }
 }
 
 /*Iphone 5/SE*/
@@ -1015,41 +992,5 @@ progress::-moz-progress-bar {
   .projects-h2:hover {
     font-size: 2.25rem;
     text-align: center;
-  }
-  .card {
-    width: 60vw;
-    padding: 0rem;
-    margin: 0.5rem;
-    flex-direction: column;
-  }
-  .card:first-child {
-    width: 80vw;
-    padding: 0.5rem;
-  }
-  .centered-first-card h3 {
-    font-size: 2.5rem;
-  }
-  .card-image:first-child {
-    max-height: 250px;
-    max-width: 250px;
-  }
-  .centered h3 {
-    font-size: 2.5rem;
-  }
-  .card-image-container {
-    margin: 0rem;
-    padding: 0rem;
-  }
-
-  .card-image {
-    max-height: 90px;
-
-    max-width: 90px;
-  }
-  .card-info p {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    letter-spacing: 0.05rem;
-    font-size: 1.25rem;
   }
 }
