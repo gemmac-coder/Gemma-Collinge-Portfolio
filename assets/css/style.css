@@ -347,10 +347,11 @@ progress::-moz-progress-bar {
 }
 /*This selector styles the images of the project cards 2, 3 and 4*/
 .card-image {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
   justify-content: center;
+  align-content: center;
   padding: 0.5rem;
   opacity: 0.6;
   flex-grow: 0.95;
