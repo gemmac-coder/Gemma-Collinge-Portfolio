@@ -23,6 +23,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
 }
 /*This selector styles the navbar*/
 .navbar {
@@ -72,6 +73,7 @@ body {
 }
 /*This selector styles the projects link in the nav bar*/
 #projects-link {
+  padding-right: 0.5rem;
   text-decoration: none;
   text-align: center;
   font-size: 3rem;
@@ -81,6 +83,52 @@ body {
 }
 /*This selector contains a pseudo element that adds a { after the project link container*/
 #projects-link-container ::after {
+  padding-right: 1.25rem;
+  padding-left: 0.2rem;
+  content: "{";
+}
+#contact-link-container {
+  background-color: var(--navy-navbar-colour);
+  display: inline;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+#contact-link-container ::before {
+  padding-right: 0.2rem;
+  content: "#";
+}
+#contact-link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 3rem;
+  font-family: monospace;
+  font-size: 2rem;
+  display: inline;
+}
+#contact-link-container ::after {
+  padding-right: 1.25rem;
+  padding-left: 0.2rem;
+  content: "{";
+}
+#cv-link-container {
+  background-color: var(--navy-navbar-colour);
+  display: inline;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+#cv-link-container ::before {
+  padding-right: 0.2rem;
+  content: "#";
+}
+#cv-link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 3rem;
+  font-family: monospace;
+  font-size: 2rem;
+  display: inline;
+}
+#cv-link-container ::after {
   padding-right: 1.25rem;
   padding-left: 0.2rem;
   content: "{";
@@ -372,6 +420,14 @@ progress::-moz-progress-bar {
 .card-image:hover {
   opacity: 0.45;
 }
+
+/* .contact {
+  background-color: var(--navy-navbar-colour);
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  margin: 0rem;
+  border-radius: 5px;
+} */
 
 /*This selector styles the footer*/
 .footer {
@@ -911,6 +967,12 @@ progress::-moz-progress-bar {
   .project-github-icon-M {
     max-height: 2.3rem;
     max-width: 2.3rem;
+    padding-top: 0.25rem;
+  }
+
+  .card-github-icon-S {
+    max-height: 2rem;
+    max-width: 2rem;
     padding-top: 0.25rem;
   }
 
