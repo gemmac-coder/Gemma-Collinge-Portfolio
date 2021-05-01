@@ -117,6 +117,7 @@ body {
   padding-right: 0.5rem;
 }
 #cv-link-container ::before {
+  padding-left: 1rem;
   padding-right: 0.2rem;
   content: "#";
 }
@@ -322,15 +323,17 @@ progress::-moz-progress-bar {
   background-color: var(--navy-background-colour);
   padding: 1rem;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 /*This selector styles the project cards*/
 .card {
   background-color: var(--dark-teal-accent-colour);
   margin-bottom: 0.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   padding: 1rem;
   border-radius: 5px;
-  width: 60vw;
+  width: 65vw;
 }
 /*This selector styles the first project card*/
 .card:first-child {
@@ -1064,10 +1067,18 @@ progress::-moz-progress-bar {
   }
 
   .card-github-icon-S {
+   vertical-align: middle;
     max-height: 2rem;
     max-width: 2rem;
     padding-top: 0.25rem;
   }
+
+  .card-github-icon-S-2 {
+    vertical-align: middle;
+     max-height: 2rem;
+     max-width: 2rem;
+     padding-top: 1rem;
+   }
 
   .card-image-container {
     margin: 0rem;
