@@ -29,7 +29,7 @@ body {
 .navbar {
   background-color: var(--navy-navbar-colour);
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -113,12 +113,12 @@ body {
 #cv-link-container {
   background-color: var(--navy-navbar-colour);
   display: inline;
-  padding-top: 0.5rem;
-  padding-right: 0.5rem;
+  padding-top: 0.75rem;
+  padding-left: 0.5rem;
 }
 #cv-link-container ::before {
-  padding-left: 1rem;
   padding-right: 0.2rem;
+  padding-top: 0.75rem;
   content: "#";
 }
 #cv-link {
@@ -127,15 +127,15 @@ body {
   font-size: 3rem;
   font-family: monospace;
   font-size: 2rem;
+  padding-top: 0.75rem;
   display: inline;
 }
 #cv-link-container ::after {
-  padding-right: 1.25rem;
+  padding-right: 1rem;
   padding-left: 0.2rem;
   content: "{";
 }
 .linked-in-icon {
-  padding-top: 0.05rem;
   max-height: 200px;
   max-width: 200px;
 }
@@ -372,6 +372,13 @@ progress::-moz-progress-bar {
   display: none;
 }
 
+.card-github-link-container-S-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.75rem;
+}
+
 .card-github-link-container-S {
   display: flex;
   flex-wrap: wrap;
@@ -424,48 +431,47 @@ progress::-moz-progress-bar {
   opacity: 0.45;
 }
 
-
 .contact {
-    background-color: var(--navy-navbar-colour);
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    object-fit: contain;
-    padding: 1.5rem;
-    margin: 0rem;
-  }
+  background-color: var(--navy-navbar-colour);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  object-fit: contain;
+  padding: 1.5rem;
+  margin: 0rem;
+}
 
-  .contact-info-container {
-    background-color: var(--navy-navbar-colour);
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    justify-content: center;
-    padding: 1.5rem;
-    margin: 0rem;
-  }
-  .contact-p {
+.contact-info-container {
+  background-color: var(--navy-navbar-colour);
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 0rem;
+}
+.contact-p {
   color: var(--dark-teal-accent-colour);
   background-color: var(--navy-navbar-colour);
   padding: 1.2rem;
   font-size: 2.75rem;
-  }
-
-  .contact-p:hover {
-    padding: 1rem;
-    font-size: 3rem;
 }
-  /*This selector styles the image container in the about me section*/
-  .contact-linkedin-container {
-    display: flex;
-    padding: 0.5rem;
-    background-color: var(--dark-teal-accent-colour);
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  /*This selector styles the image in the about me section*/
-  /* .about-me-image {
+
+.contact-p:hover {
+  padding: 1rem;
+  font-size: 3rem;
+}
+/*This selector styles the image container in the about me section*/
+.contact-linkedin-container {
+  display: flex;
+  padding: 0.5rem;
+  background-color: var(--dark-teal-accent-colour);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*This selector styles the image in the about me section*/
+/* .about-me-image {
     flex-wrap: wrap;
     height: 60%;
     max-width: 60%;
@@ -481,7 +487,6 @@ progress::-moz-progress-bar {
   padding-top: 0.5rem;
   margin: 0rem;
   border-radius: 5px; */
-}
 
 /* .as {
   padding-left: 0.25rem;
@@ -670,11 +675,11 @@ progress::-moz-progress-bar {
   .contact-p {
     padding: 0.5rem;
     font-size: 2.5rem;
-}
-.contact-p:hover {
-  padding: 0.35em;
-  font-size: 3rem;
-}
+  }
+  .contact-p:hover {
+    padding: 0.35em;
+    font-size: 3rem;
+  }
 }
 
 /*Large Breakpoint*/
@@ -773,11 +778,11 @@ progress::-moz-progress-bar {
   .contact-p {
     padding: 0.6rem;
     font-size: 2.25rem;
-}
-.contact-p:hover {
-  padding: 0.3rem;
-  font-size: 2.7rem;
-}
+  }
+  .contact-p:hover {
+    padding: 0.3rem;
+    font-size: 2.7rem;
+  }
 }
 
 /*Medium Breakpoint*/
@@ -867,9 +872,21 @@ progress::-moz-progress-bar {
     font-size: 3.25rem;
   }
   .project-github-icon-M {
-    max-height: 3rem;
-    max-width: 3rem;
+    max-height: 3.6rem;
+    max-width: 3.6rem;
     padding-top: 0.25rem;
+  }
+  .card-github-link-container-S-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0.25rem;
+  }
+  .card-github-link-container-S {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0.2rem;
   }
   .card-info p {
     padding-top: 2rem;
@@ -881,11 +898,11 @@ progress::-moz-progress-bar {
   .contact-p {
     padding: 0.5rem;
     font-size: 2.15rem;
-}
-.contact-p:hover {
-  padding: 0.25rem;
-  font-size: 2.5rem;
-}
+  }
+  .contact-p:hover {
+    padding: 0.25rem;
+    font-size: 2.5rem;
+  }
 }
 
 /*Small Breakpoint*/
@@ -959,8 +976,8 @@ progress::-moz-progress-bar {
   }
 
   .project-github-icon-M {
-    max-height: 2.5rem;
-    max-width: 2.5rem;
+    max-height: 3.7rem;
+    max-width: 3.7rem;
     padding-top: 0.25rem;
   }
   .card-image-container {
@@ -977,11 +994,11 @@ progress::-moz-progress-bar {
   .contact-p {
     padding: 0.25rem;
     font-size: 2rem;
-}
-.contact-p:hover {
-  padding: 0.15rem;
-  font-size: 2.2rem;
-}
+  }
+  .contact-p:hover {
+    padding: 0.15rem;
+    font-size: 2.2rem;
+  }
 }
 
 /*IPhone 6/7/8Plus*/
@@ -1061,24 +1078,22 @@ progress::-moz-progress-bar {
   }
 
   .project-github-icon-M {
-    max-height: 2.3rem;
-    max-width: 2.3rem;
+    max-height: 3.5rem;
+    max-width: 3.5rem;
     padding-top: 0.25rem;
   }
-
-  .card-github-icon-S {
-   vertical-align: middle;
-    max-height: 2rem;
-    max-width: 2rem;
+  .card-github-link-container-S-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 0.25rem;
   }
-
-  .card-github-icon-S-2 {
-    vertical-align: middle;
-     max-height: 2rem;
-     max-width: 2rem;
-     padding-top: 1rem;
-   }
+  .card-github-link-container-S {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0.2rem;
+  }
 
   .card-image-container {
     margin: 0rem;
@@ -1087,11 +1102,11 @@ progress::-moz-progress-bar {
   .contact-p {
     padding: 0.25rem;
     font-size: 1.65rem;
-}
-.contact-p:hover {
-  padding: 0.15rem;
-  font-size: 1.75rem;
-}
+  }
+  .contact-p:hover {
+    padding: 0.15rem;
+    font-size: 1.75rem;
+  }
 }
 
 /*Iphone 5/SE*/
@@ -1155,5 +1170,4 @@ progress::-moz-progress-bar {
     font-size: 2.25rem;
     text-align: center;
   }
-  
 }
