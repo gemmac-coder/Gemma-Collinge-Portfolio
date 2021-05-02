@@ -8,6 +8,15 @@ Click [here](https://gemmac-coder.github.io/Gemma-Collinge-Web-Development-Portf
 
 I was tasked to create a portfolio to attract potential employers by showcasing my development work and allowing potential employers to learn a little more about me and my skills. My portfolio had to provide an image of me, links to my work and a contact link.
 
+## Technologies & Languages Used:
+
+- HTML5
+- CSS
+
+## License
+
+MIT
+
 ## What did I do?
 
 - Used semantic HTML
@@ -40,3 +49,5 @@ I was tasked to create a portfolio to attract potential employers by showcasing 
 ![Screenshot showcasing view at Extra-Large breakpoint size (max 1200px width)](assets/screenshots/screenshot-portfolio-1200px-width-view.png)
 
 ![Screenshot showcasing view for devices over 1200px width (max 1200px width)](assets/screenshots/screenshot-portfolio-1200px-width-view.png)
+
+For more information, please contact: gemmacollinge_71@hotmail.com
