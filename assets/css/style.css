@@ -320,7 +320,7 @@ progress::-moz-progress-bar {
   margin-left: 2rem;
   padding: 1rem;
   border-radius: 5px;
-  width: 65vw;
+  width: 30vw;
 }
 /*This selector styles the first project card*/
 .card:first-child {
