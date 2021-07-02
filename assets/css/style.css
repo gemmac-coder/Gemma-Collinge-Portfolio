@@ -382,7 +382,7 @@ progress::-moz-progress-bar {
 }
 
 /*This selector styles the title project cards 2, 3 and 4*/
-.centered h3 {
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -516,7 +516,7 @@ progress::-moz-progress-bar {
     padding-bottom: 2rem;
   }
   .card {
-    width: 20vw;
+    width: 40vw;
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex-direction: row;
@@ -536,6 +536,11 @@ progress::-moz-progress-bar {
   .centered-first-card h3 {
     font-size: 4rem;
   }
+
+  .centered {
+    font-size: 2.5rem;
+  }
+
   .card-image-container {
     margin: 0rem;
     padding: 0rem;
@@ -613,7 +618,7 @@ progress::-moz-progress-bar {
     text-align: center;
   }
   .card {
-    width: 25vw;
+    width: 35vw;
     padding: 0rem;
     flex-direction: row;
   }
@@ -740,6 +745,11 @@ progress::-moz-progress-bar {
   .centered-first-card h3 {
     font-size: 3rem;
   }
+
+  .centered {
+    font-size: 1.85rem;
+  }
+
   .project-github-link-container-L {
     display: none;
   }
@@ -842,18 +852,22 @@ progress::-moz-progress-bar {
     justify-content: center;
   }
   .card {
-    width: 50vw;
+    width: 55vw;
     padding: 0rem;
     flex-direction: column;
   }
   .card:first-child {
-    width: 60vw;
+    width: 70vw;
     margin: 2rem;
   }
 
   .card:nth-child(2) {
-    width: 60vw;
+    width: 70vw;
     margin: 2rem;
+  }
+
+  .centered {
+    font-size: 2rem;
   }
 
   .card-image-container {
@@ -956,21 +970,24 @@ progress::-moz-progress-bar {
     text-align: center;
   }
   .card {
-    width: 60vw;
+    width: 50vw;
     padding: 0rem;
     margin: 0.5rem;
   }
   .card:first-child {
-    width: 90vw;
+    width: 65vw;
   }
 
   .card:nth-child(2) {
-    width: 90vw;
+    width: 65vw;
   }
   .centered-first-card h3 {
     font-size: 3rem;
   }
 
+  .centered {
+    font-size: 2.2rem;
+  }
   .project-github-icon-M {
     max-height: 3.7rem;
     max-width: 3.7rem;
@@ -1060,23 +1077,27 @@ progress::-moz-progress-bar {
     text-align: center;
   }
   .card:first-child {
-    width: 50vw;
+    width: 60vw;
     padding: 0.75rem;
   }
 
   .card:nth-child(2) {
-    width: 50vw;
+    width: 60vw;
     margin: 2rem;
   }
 
   .card {
-    width: 60vw;
+    width: 50vw;
     padding: 0rem;
     margin: 0.5rem;
   }
 
   .centered-first-card h3 {
     font-size: 3rem;
+  }
+
+  .centered {
+    font-size: 1.6rem;
   }
 
   .project-github-icon-M {
@@ -1103,11 +1124,11 @@ progress::-moz-progress-bar {
   }
   .contact-p {
     padding: 0.25rem;
-    font-size: 1.65rem;
+    font-size: 1.6rem;
   }
   .contact-p:hover {
     padding: 0.15rem;
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -1171,5 +1192,8 @@ progress::-moz-progress-bar {
   .projects-h2:hover {
     font-size: 2.25rem;
     text-align: center;
+  }
+  .centered {
+    font-size: 1.1rem;
   }
 }
