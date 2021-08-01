@@ -2,7 +2,7 @@
 
 ## Link to deployed application
 
-Click [here](https://gemmac-coder.github.io/Gemma-Collinge-Web-Development-Portfolio/) to view the project on Github pages.
+Click [here](https://gemmac-coder.github.io/Gemma-Collinge-Portfolio/) to view the project on Github pages.
 
 ## Description
 
